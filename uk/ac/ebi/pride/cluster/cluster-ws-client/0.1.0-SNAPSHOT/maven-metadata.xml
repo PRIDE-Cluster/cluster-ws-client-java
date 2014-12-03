@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>uk.ac.ebi.pride.cluster</groupId>
+  <artifactId>cluster-ws-client</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20141203.204449</timestamp>
+      <buildNumber>5</buildNumber>
+    </snapshot>
+    <lastUpdated>20141203204449</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.1.0-20141203.204449-5</value>
+        <updated>20141203204449</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.1.0-20141203.204449-5</value>
+        <updated>20141203204449</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

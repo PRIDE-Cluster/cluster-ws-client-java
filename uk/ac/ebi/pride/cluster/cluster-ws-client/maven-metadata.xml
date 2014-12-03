@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>uk.ac.ebi.pride.cluster</groupId>
+  <artifactId>cluster-ws-client</artifactId>
+  <versioning>
+    <versions>
+      <version>0.1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20141203204449</lastUpdated>
+  </versioning>
+</metadata>
