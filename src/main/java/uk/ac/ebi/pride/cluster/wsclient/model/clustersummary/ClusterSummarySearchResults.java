@@ -3,7 +3,7 @@ package uk.ac.ebi.pride.cluster.wsclient.model.clustersummary;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * @author jadianes ${EMAIL}
+ * @author jadianes <jadianes@gmail.com>
  */
 public class ClusterSummarySearchResults {
 
