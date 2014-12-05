@@ -45,12 +45,12 @@ public class ClusterWsClientTemplateTest {
     @Test
     public void testClusterSummarySearch() throws IOException {
 
-        ClusterSummarySearchResults res = clusterSummaryWsClient.search("",1,10);
+        ClusterSummarySearchResults res = clusterSummaryWsClient.search("",0,10);
 
         assertNotNull(res);
         assertNotNull(res.results);
         assertTrue(res.totalResults > 0);
-        assertTrue(res.pageNumber == 1);
+        assertTrue(res.pageNumber == 0);
         assertTrue(res.pageSize == 10);
         assertTrue(res.results.length == 10);
 
@@ -73,6 +73,7 @@ public class ClusterWsClientTemplateTest {
         Spectrum res = spectrumWsClient.consensus(TEST_CLUSTER_ID);
 
         assertNotNull(res);
+        assertEquals(TEST_CLUSTER_ID, res.clusterId);
         assertTrue(res.peaks.length>0);
 
     }

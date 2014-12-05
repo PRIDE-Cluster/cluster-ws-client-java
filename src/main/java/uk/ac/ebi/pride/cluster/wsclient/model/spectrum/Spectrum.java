@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Spectrum {
 
     @JsonProperty
-    public String id;
+    public String clusterId;
 
     @JsonProperty
     public SpectrumPeak[] peaks;

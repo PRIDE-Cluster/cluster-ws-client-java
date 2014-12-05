@@ -29,7 +29,7 @@ public class SpectrumWsClient {
         args.put("clusterId", clusterId);
 
         String url = String.format("%s://%s/pride/ws/cluster/%s",
-                config.getProtocol(), config.getHostName(), "spectrumSummary/{clusterId}/consensus");
+                config.getProtocol(), config.getHostName(), "spectrum/{clusterId}/consensus");
 
         return this.restTemplate.getForObject(url, Spectrum.class, args);
     }
