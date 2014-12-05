@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/PRIDE-Cluster/cluster-ws-client-java.svg?branch=master)](https://travis-ci.org/PRIDE-Cluster/cluster-ws-client-java)
 cluster-ws-client-java
 ======================
 
