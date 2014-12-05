@@ -2,6 +2,7 @@ package uk.ac.ebi.pride.cluster.wsclient.client.clustersummary;
 
 import org.springframework.web.client.RestTemplate;
 import uk.ac.ebi.pride.cluster.wsclient.config.ClusterWsConfig;
+import uk.ac.ebi.pride.cluster.wsclient.model.clustersummary.ClusterSummary;
 import uk.ac.ebi.pride.cluster.wsclient.model.clustersummary.ClusterSummarySearchResults;
 
 import java.io.IOException;
@@ -32,6 +33,18 @@ public class ClusterSummaryWsClient {
                 config.getProtocol(), config.getHostName(), "clusterSummary/search?q={q}&page={page}&size={size}");
 
         return this.restTemplate.getForObject(url, ClusterSummarySearchResults.class, args);
+
+    }
+
+    public ClusterSummary get(String clusterId) throws IOException {
+
+        Map<String, String> args = new HashMap<String, String>();
+        args.put("clusterId", clusterId);
+
+        String url = String.format("%s://%s/pride/ws/cluster/%s",
+                config.getProtocol(), config.getHostName(), "clusterSummary/{clusterId}");
+
+        return this.restTemplate.getForObject(url, ClusterSummary.class, args);
 
     }
 }

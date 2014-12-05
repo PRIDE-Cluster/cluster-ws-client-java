@@ -6,7 +6,4 @@
 
     <bean id="clusterWsConfig" class="uk.ac.ebi.pride.cluster.wsclient.config.ClusterWsConfigDev"/>
 
-    <!--load property files-->
-    <context:property-placeholder location="classpath:prop/cluster-ws-config.properties" ignore-unresolvable="true" order="1"/>
-
 </beans>
