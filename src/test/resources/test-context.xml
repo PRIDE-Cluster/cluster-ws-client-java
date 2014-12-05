@@ -4,10 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="clusterWsConfig" class="uk.ac.ebi.pride.cluster.wsclient.config.ClusterWsConfig">
-        <property name="protocol" value="${ws.protocol}"/>
-        <property name="hostName" value="${ws.host.name}"/>
-    </bean>
+    <bean id="clusterWsConfig" class="uk.ac.ebi.pride.cluster.wsclient.config.ClusterWsConfigDev"/>
 
     <!--load property files-->
     <context:property-placeholder location="classpath:prop/cluster-ws-config.properties" ignore-unresolvable="true" order="1"/>
