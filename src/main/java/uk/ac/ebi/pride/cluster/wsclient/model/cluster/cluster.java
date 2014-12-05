@@ -1,14 +1,13 @@
-package uk.ac.ebi.pride.cluster.wsclient.model.clustersummary;
+package uk.ac.ebi.pride.cluster.wsclient.model.cluster;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
  * @author jadianes <jadianes@gmail.com>
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ClusterSummary {
+public class Cluster {
 
     @JsonProperty
     public String id;

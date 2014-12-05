@@ -1,11 +1,11 @@
-package uk.ac.ebi.pride.cluster.wsclient.model.clustersummary;
+package uk.ac.ebi.pride.cluster.wsclient.model.cluster;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * @author jadianes <jadianes@gmail.com>
  */
-public class ClusterSummarySearchResults {
+public class ClusterSearchResults {
 
     @JsonProperty("totalResults")
     public long totalResults;
@@ -16,6 +16,6 @@ public class ClusterSummarySearchResults {
     @JsonProperty
     public long pageSize;
 
-    public ClusterSummary[] results;
+    public Cluster[] results;
 
 }
