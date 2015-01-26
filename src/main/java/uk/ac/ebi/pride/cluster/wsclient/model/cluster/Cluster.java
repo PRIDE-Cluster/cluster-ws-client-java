@@ -27,4 +27,10 @@ public class Cluster {
     @JsonProperty
     public String clusterQuality;
 
+    @JsonProperty
+    public String peptideSequence;
+
+    @JsonProperty
+    public String proteinAccession;
+
 }
