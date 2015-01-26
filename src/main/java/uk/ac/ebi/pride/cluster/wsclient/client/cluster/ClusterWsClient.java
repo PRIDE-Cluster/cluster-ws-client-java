@@ -24,6 +24,11 @@ public class ClusterWsClient {
         this.restTemplate = new RestTemplate();
     }
 
+    public long totalSearchResults(String q) throws IOException {
+        ClusterSearchResults clusterSearchResults = this.search(q,0,1);
+        return clusterSearchResults.totalResults;
+    }
+
     public ClusterSearchResults search(String q, int page, int size) throws IOException {
 
         Map<String, String> args = new HashMap<String, String>();
